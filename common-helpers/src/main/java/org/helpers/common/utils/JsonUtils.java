@@ -5,9 +5,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
-import org.helpers.common.api.Response;
-import org.helpers.common.api.ResponseError;
-import org.helpers.common.api.ResponseStatus;
+import org.helpers.common.api.response.Response;
+import org.helpers.common.api.response.ResponseError;
+import org.helpers.common.api.response.ResponseStatus;
 
 import java.io.IOException;
 import java.util.ArrayList;

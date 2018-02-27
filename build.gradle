@@ -3,6 +3,7 @@ buildscript {
         lombokVersion = '1.16.20'
         guavaVersion = '24.0-jre'
         jacksonVersion = '2.9.4'
+        slf4jVersion = '1.7.25'
         springCoreVersion = '5.0.4.RELEASE'
         springBootVersion = '2.0.0.RC2'
         jjwtVersion = '0.9.0'

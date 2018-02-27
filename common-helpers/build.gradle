@@ -9,6 +9,11 @@ dependencies {
     compile("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}")
     compile("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
     compile("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
+    compile("org.slf4j:slf4j-api:${slf4jVersion}")
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
     testCompile("junit:junit:${junitVersion}")
+}
+
+checkstyle {
+    configFile = new File(rootDir, "checkstyle.xml")
 }

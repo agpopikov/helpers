@@ -1,4 +1,4 @@
-package org.helpers.common.api;
+package org.helpers.common.api.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -23,9 +23,5 @@ public class Response<T> {
 
     public static <T> Response<T> fail(String message) {
         return new Response<>(ResponseStatus.ERROR, null, new ResponseError(message));
-    }
-
-    public static <T> Response<T> notImplemented() {
-        return fail("Not implemented yet!");
     }
 }
