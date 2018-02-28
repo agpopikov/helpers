@@ -6,10 +6,12 @@ repositories {
 }
 
 dependencies {
+    compile("com.google.guava:guava:${guavaVersion}")
     compile("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}")
     compile("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
     compile("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
     compile("org.slf4j:slf4j-api:${slf4jVersion}")
+    compile("io.jsonwebtoken:jjwt:${jjwtVersion}")
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
     testCompile("junit:junit:${junitVersion}")
 }

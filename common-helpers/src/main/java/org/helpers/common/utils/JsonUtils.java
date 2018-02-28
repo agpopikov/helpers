@@ -18,6 +18,14 @@ import java.util.Collection;
  */
 public class JsonUtils {
 
+    /**
+     * Serializes specified value of type T to JSON.
+     *
+     * @param mapper - mapper to use.
+     * @param object - value to serialize.
+     * @param <T>    - type of value to serialize.
+     * @return - string with JSON.
+     */
     public static <T> String toJson(ObjectMapper mapper, T object) {
         try {
             return mapper.writeValueAsString(object);
@@ -26,6 +34,16 @@ public class JsonUtils {
         }
     }
 
+    /**
+     * Deserialize specified JSON-string to object of type T,
+     * if it have any problem with deserialization - throws runtime exception.
+     *
+     * @param mapper - mapper to use.
+     * @param value  - value to deserialize.
+     * @param clazz  - class of T (mitigating Java generics).
+     * @param <T>    - type of value to deserialize.
+     * @return - deserialized object.
+     */
     public static <T> T fromJson(ObjectMapper mapper, String value, Class<T> clazz) {
         try {
             return mapper.readValue(value, clazz);
